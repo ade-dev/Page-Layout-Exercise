@@ -2,11 +2,12 @@
   "name": "the-hideout",
   "version": "0.0.0",
   "description": "Page Layout",
+  "repository": "https://github.com/ade-dev/Page-Layout-Exercise.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ade Oyebadejo",
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.2",

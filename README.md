@@ -1,6 +1,6 @@
 # Page Layout Exercise
 
-The application is built using SASS CSS(3), HTML(5)and Bootstrap 6.
+The application is built using SASS CSS(3), HTML(5)and Bootstrap 4 alpha.
 
 Please click on index.html to view
 
