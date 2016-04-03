@@ -1,14 +1,20 @@
 {
-  "name": "the-hideout",
+  "name": "responsive-page-layout",
   "version": "0.0.0",
-  "description": "Page Layout",
-  "repository": "https://github.com/ade-dev/Page-Layout-Exercise.git",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Responsive page layout, includes fluid, full-width irregular image gallery and a CSS driven expandable search feature",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ade-dev/Page-Layout-Exercise.git"
   },
   "author": "Ade Oyebadejo",
-  "license": "ISC",
+  "keywords": [
+    "css3",
+    "sass",
+    "bootstrap 4",
+    "html5",
+    "responsive"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.2",
     "grunt": "^0.4.5",

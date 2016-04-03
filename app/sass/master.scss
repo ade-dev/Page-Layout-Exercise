@@ -1,0 +1,137 @@
+@import 'variables';
+
+body {
+  background-color: $bgcolor-a;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.page-wrapper {
+  // max-width: 2500px;
+}
+.search-section {
+  padding-top: 30px;
+  .search-form {
+    float: right;
+    width: 100%;
+    height: 46px;
+  }
+}
+.search-container {
+  position: relative;
+  float: right;
+  width: 380px;
+  max-width: 100%;
+  height: 100%;
+  padding-right: 46px;
+  overflow: hidden;
+  > * {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    border: none;
+  }
+  .search-control, .search-submit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 46px;
+    text-indent: 1000px;
+    overflow: hidden;
+    cursor: pointer;
+    background: $color-white url("../images/icon_search.png") center center/30px 30px no-repeat;
+  }
+  .search-field {
+    float: left;
+    width: 0px;
+    text-indent: 15px;
+    transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    &:focus {
+      width: 100%;
+      outline: none;
+      + .search-submit {
+        z-index: 6;
+      }
+    }
+  }
+  .search-submit {
+    z-index: 4;
+    &:focus {
+      outline: none;
+      z-index: 6 !important;
+    }
+  }
+  .search-control {
+    z-index: 5;
+    &:focus{
+      outline: none;
+      + .search-field {
+        width: 100%;
+      }
+    }
+  }
+}
+.card-section {
+  padding-bottom: 50px;
+  .card-image{
+    width: 100%;
+  }
+  .card-item {
+    margin-top: 20px;
+    background-color: $color-white;
+  }
+  .card-article {
+    padding: 0.9375rem;
+    p {
+      margin: 0px;
+    }
+  }
+}
+.gallery-section {
+  background-color: $color-white;
+  ul {
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    box-sizing: content-box;
+    width: 40%;
+    vertical-align: top;
+    &:nth-child(2), &:nth-child(5) {
+      width: 20%;
+    }
+    &:nth-child(4) {
+      float: right;
+    }
+    &:nth-child(5) {
+      clear: left;
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      box-sizing: border-box;
+      margin-right: -10px;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(6) {
+      border-right: 5px solid $color-white;
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      border-top: 5px solid $color-white;
+    }
+  }
+}
+/*** Helper Classes **/
+.no-padding{
+  padding: 0px;
+}
+@import 'media-queries';

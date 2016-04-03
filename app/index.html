@@ -1,21 +1,21 @@
 <!doctype html>
 <html>
   <head>
-    <title>The hideout - Ade Oyebadejo</title>
+    <title>Responsive, fluid, full-width page layout - Ade Oyebadejo</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="css/vendor/bootstrap4.0.0-alpha.2.min.css" rel="stylesheet" type="text/css" />
     <link href="css/master.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div  class="container page-wrapper">
+    <div  class="container-fluid page-wrapper">
       <div class="row search-section">
         <div class="col-md-12">
-          <form class="search-form">
-            <div>
-              <button type="button" title="search">Search</button>
-              <input type="text" id="searchField" value="Enter a search term">
-              <input type="submit" value="Submit">
+          <form onsubmit="getSearch()" class="search-form">
+            <div class="search-container">
+              <button type="button" title="search" class="search-control">Search</button>
+              <input type="text" id="searchField" placeholder="Enter a search term" class="search-field">
+              <input type="submit" value="Search" class="search-submit">
             </div>
           </form>
         </div>
@@ -24,7 +24,7 @@
         <div class="col-md-4">
           <div class="card-item">
             <div class="card-image">
-              <img src="https://unsplash.it/721/447?image=824" alt="Card Image" />
+              <img src="images/card_img_01.jpg" alt="Card Image - 1" />
             </div>
             <div class="card-article">
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
@@ -34,7 +34,7 @@
         <div class="col-md-4">
           <div class="card-item">
             <div class="card-image">
-              <img src="https://unsplash.it/721/447?image=1036" alt="Card Image" />
+              <img src="images/card_img_02.jpg" alt="Card Image - 2" />
             </div>
             <div class="card-article">
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -44,7 +44,7 @@
         <div class="col-md-4">
           <div class="card-item">
             <div class="card-image">
-              <img src="https://unsplash.it/721/447?image=1031" alt="Card Image" />
+              <img src="images/card_img_03.jpg" alt="Card Image - 3" />
             </div>
             <div class="card-article">
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
@@ -55,25 +55,26 @@
       <div class="row gallery-section">
         <ul class="col-md-12 no-padding">
           <li>
-            <img src="https://unsplash.it/1000/1020?image=986" alt="Gallery Image" />
+            <img src="images/gallery_img_01.jpg" alt="Gallery Image" />
           </li>
           <li>
-            <img src="https://unsplash.it/500/1000?image=346" alt="Gallery Image" />
+            <img src="images/gallery_img_02.jpg" alt="Gallery Image" />
           </li>
           <li>
-            <img src="https://unsplash.it/1000/500?image=972" alt="Gallery Image" />
+            <img src="images/gallery_img_03.jpg" alt="Gallery Image" />
           </li>
           <li>
-            <img src="https://unsplash.it/1000/1022?image=820" alt="Gallery Image" />
+            <img src="images/gallery_img_04.jpg" alt="Gallery Image" />
           </li>
           <li>
-            <img src="https://unsplash.it/500/500?image=919" alt="Gallery Image" />
+            <img src="images/gallery_img_05.jpg" alt="Gallery Image" />
           </li>
           <li>
-            <img src="https://unsplash.it/1000/495?image=601" alt="Gallery Image" />
+            <img src="images/gallery_img_06.jpg" alt="Gallery Image" />
           </li>
         </ul>
       </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

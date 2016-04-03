@@ -1,21 +1,20 @@
-# Page Layout Exercise
+# Responsive Page Layout Exercise
 
-The application is built using SASS CSS(3), HTML(5)and Bootstrap 4 alpha.
+### Overview
 
-Please click on index.html to view
+Includes a responsive, fluid, full-width irregular image gallery, equal height card section and a CSS driven expandable search feature
 
-# Application Directory Layout
+Layout was done with HTML(5), SASS CSS(3) and Bootstrap 4 alpha.
 
-app/                --> All of the files used in production
-  css/              --> css folder
-    master.css      --> Main stylesheet compiled from master.scss
-    /vendor
-      bootstrap.css
-  SASS/             --> SASS file
-    master.scss     --> Main SASS file
-  images            --> ontains search icon
-  index.html        --> HTML file, please click on this to view page
+### Application files structure
 
-=======
-# Page-Layout-Exercise
-
+app/                     --> All of the files used in production
+  css/                   --> CSS Folder
+    master.css           --> Main stylesheet compiled from master.scss
+      /vendor
+        bootstrap.css
+  sass/                  --> SASS Folder
+    master.scss          --> Main SASS File
+    media-queries.scss   --> Media Queries
+  images                 --> Images
+  index.html             --> Index File
