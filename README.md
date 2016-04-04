@@ -7,14 +7,13 @@ Includes a responsive, fluid, full-width irregular image gallery, equal height c
 Layout was done with HTML(5), SASS CSS(3) and Bootstrap 4 alpha.
 
 ### Application files structure
-
-app/                     --> All of the files used in production
-  css/                   --> CSS Folder
-    master.css           --> Main stylesheet compiled from master.scss
-      /vendor
-        bootstrap.css
-  sass/                  --> SASS Folder
-    master.scss          --> Main SASS File
-    media-queries.scss   --> Media Queries
-  images                 --> Images
-  index.html             --> Index File
+    app/                    --> All of the files used in production
+      css/                  --> CSS file
+       master.css           --> Default stylesheet compiled from master.scss
+       vendor/
+         bootstrap.css
+      sass/                 --> SASS Folder
+        master.scss         --> Main SASS file
+        media-queries.scss  --> Media queries
+      images/               --> All images
+      index.html            --> Index file
